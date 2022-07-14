@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="https://www.ford.com.br/etc/designs/guxfoap/clientlibs/guxfoap/img/favicon.ico" type="image/x-icon">
+		<title>Ford - Contato</title>
+		<link rel="stylesheet" href="css/contato.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/form.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="flex-header">
+				<img src="img/logo-ford-256.png" alt="Logo da Ford" class="item logo-header">
+				<nav>
+					<ul class="item flex-list">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="lancamento.html">Lançamento</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>				
+			</div>
+		</header>
+		<main>
+			<div class="flex-contact">
+				<img class="contact-item" id="img-contact" src="img/xls 2.2 diesel.jpg" alt="Foto do XLS 2.2 Diesel">
+				<form class="contact-item form-flex" onsubmit="Post(this)">
+					<div class="form-item">
+						<h2>Sobre Você</h2><br>
+						<input type="text" name="nome" id="name" class="input_padrao" required placeholder="NOME*">
+						<input type="email" name="email" id="email" class="input_padrao" required placeholder="EMAIL*">
+						<input type="text" name="cpf" id="cpf" class="input_padrao"  required placeholder="CPF/CNPJ*">
+						<input type="text" name="sobrenome" id="surname" class="input_padrao" required placeholder="SOBRENOME*">
+						<input type="tel" name="telefone" id="tel" class="input_padrao" required placeholder="TELEFONE*">
+                        <select class="input_padrao">
+                            <option selected>
+                                QUAL O TIPO DE CONTATO? 
+                            </option>
+                            <option value="0">ELOGIO</option>
+                            <option value="1">RECLAMAÇÃO</option>
+                            <option value="2">SOLICITAÇÃO</option>	
+                        </select>
+						<textarea class="input_padrao" name="observacao" cols="30" rows="5" id="mensagem" required placeholder="Escreva sua mensagem aqui."></textarea>
+						
+					</div>
+					<button type="submit" class= "form-item" id="contact-button">Enviar</button>
+				</form>
+			</div>			
+		</main>
+		<footer>
+			<div class="flex-footer">
+				<div class="flex-social">
+					<p class="social-items">Redes Sociais</p>
+					<a href="https://pt-br.facebook.com/FordBrasil/" class="social-items social-img"><img src="img/facebook-50.png" alt="Nosso Facebook" id="facebook"></a>
+					<a href="https://www.youtube.com/user/fordbrasil"  class="social-items social-img"><img src="img/youtube-squared-50.png" alt="Nosso canal do Youtube" id="youtube"></a>
+					<a href="https://www.instagram.com/fordbrasil/" class="social-items social-img"><img src="img/instagram-logo-50.png" alt="Nosso Instagram" id="instagram"></a>
+				</div>
+				<div id="copyright">
+					<img src="img/ford-96.png" alt="Copyright Ford" id="img-copyright">
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
