@@ -1,0 +1,32 @@
+
+main {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	
+}
+#carousel {
+	width: 90%;
+	position: relative;
+	
+}
+.flex-main.selected {
+	position: absolute;
+	left: 0;
+	right: 0;
+    margin: .6em auto;
+	width: 80%;
+	min-width: 300px;
+
+}
+.unselected {
+	display: none;
+}
+.flex-main img {
+	width: 100%;
+}
+.flex-main p {
+	color: #000000;
+	font-size: 15px;
+	text-align: center;
+}

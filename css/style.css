@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: arial;
+	list-style-type: none;
+	text-decoration: none;
+}
+html {
+	font-size: 62.5%;
+}
+header {
+	background-color: #FFFFFF;
+	padding: 5px 0;
+	box-shadow: 0 .1em #DCDCDC;
+}
+body {
+	height: 100%;
+	margin-bottom: 6rem;
+}
+.flex-header {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.item {
+	padding: .5rem;
+	margin: .5rem;
+}
+.logo-header {
+	width: 15%;
+	min-width: 12rem;
+}
+nav {
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 15%;
+}
+.flex-list {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+nav li {
+	margin-left: 1.6rem;
+}
+nav a {
+	color: #1351d8;
+	font-weight: bold;
+	font-size: 2.1rem;
+	text-decoration: none;
+	transition: .1s all;
+}
+nav a:hover {
+	font-size: 2.2em; 
+	cursor: pointer;
+	color:	#0000CD;
+}
+
+.flex-footer {
+	padding: 1em 2em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;	
+	margin: 0 auto;
+	display: flex;
+	background-color: #1B357E;
+	
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-social {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: .2rem;
+}
+.social-items {
+	height: auto;
+	color: #FFFFFF;
+	font-size: .8rem;
+}
+.social-img {
+	width: 15%;
+}
+.social-img img {
+	width: 100%;
+	min-width: 3rem;
+}
+#copyright {
+	width: 6%;
+	padding-right: .1rem;
+}
+#img-copyright {
+	width: 100%;
+	min-width: 3.5rem;
+}
+
+
+@media screen and (max-width: 1300px) {
+	body, html, main, .flex-header, .flex-list, .flex-footer, .flex-social, div#compare, .form-flex {
+		width: auto;
+	}
+	.flex-list {
+		flex-flow: column;
+	}
+	#carousel {	
+		height: 40rem;	
+		top: 100%;
+		transform: translateY(25%);	
+	}
+	.flex-main.selected {
+		width: 98%;
+	}
+	.flex-main img {
+		height: 30rem;
+	}
+	div#compare {
+		position: initial;
+		height: 100rem;
+	}
+	#c-table tr {
+		display: flex;
+		flex-flow: column;
+	}
+
+}
